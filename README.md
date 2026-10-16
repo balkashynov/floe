@@ -1,5 +1,7 @@
 # Floe
 
+[![Verify and publish demo](https://github.com/balkashynov/floe/actions/workflows/verify.yml/badge.svg)](https://github.com/balkashynov/floe/actions/workflows/verify.yml)
+
 ### Your notebook ran. Did the answer change?
 
 Compare selected Python notebook results before a runtime upgrade, then reduce a stable change to a smaller reproducer.

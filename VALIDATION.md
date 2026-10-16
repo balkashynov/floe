@@ -57,8 +57,12 @@ The wheel was built and installed into a clean virtual environment. Its `floe` e
 
 ## Material limits
 
-No hosted Snowflake runtime, native SQL cell, Snowpark distributed execution or external customer notebook was exercised. No Linux/Windows execution or hosted CI pass is claimed. Python versions other than 3.12 were not tested in this build. Runtime package pins reproduce the Python dependency set, not the OS/native-library environment. Two repeats cannot prove determinism; observation policies can intentionally hide changes. Imported provenance is caller-attested. Fresh kernels are not a security sandbox. There is no confirmed Snowflake adoption interest.
+No hosted Snowflake runtime, native SQL cell, Snowpark distributed execution or external customer notebook was exercised. The original frozen evidence is from macOS; the public release also passed Ubuntu CI as recorded below. Windows remains unvalidated. Python versions other than 3.12 were not tested in this build. Runtime package pins reproduce the Python dependency set, not the OS/native-library environment. Two repeats cannot prove determinism; observation policies can intentionally hide changes. Imported provenance is caller-attested. Fresh kernels are not a security sandbox. There is no confirmed Snowflake adoption interest.
 
 ## Public release preparation
 
 The public release replaces the absolute developer environment prefix in five recorded error artifacts with `<candidate-runtime>`. Notebook sources, inputs, observed values, verdicts and timings are unchanged. The exact-output baseline flags were checked again after this path redaction and remain identical. Private originals are retained outside the public package. The source archive now includes the presentation source, usage guide and CI workflow; regenerate it with `python scripts/package_release.py`.
+
+## Hosted publication check
+
+[GitHub Actions run 38845165824](https://github.com/balkashynov/floe/actions/runs/38845165824) verified source commit `24fdee31ca1cdb8ca027d4f01e6fdb463aaa02a2` on Ubuntu with Python 3.12: all 53 tests passed, and all 12 designed cases matched their expected verdicts across 48 fresh-kernel executions. The source/demo packaging and GitHub Pages deployment also passed. This is additional Linux execution evidence, not live Snowflake validation. The browser continues to display the original recorded macOS runs; CI does not replace those artifacts.
