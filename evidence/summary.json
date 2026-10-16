@@ -1,0 +1,103 @@
+{
+  "cases": [
+    {
+      "id": "category-loss",
+      "title": "An empty region vanishes",
+      "expected": "changed",
+      "actual": "changed",
+      "passed": true,
+      "seconds": 2.893050124985166
+    },
+    {
+      "id": "category-fixed",
+      "title": "Explicit group semantics preserve the report",
+      "expected": "match",
+      "actual": "match",
+      "passed": true,
+      "seconds": 2.85879787497106
+    },
+    {
+      "id": "copy-on-write",
+      "title": "The price update no longer reaches its table",
+      "expected": "changed",
+      "actual": "changed",
+      "passed": true,
+      "seconds": 2.7740021669887938
+    },
+    {
+      "id": "copy-fixed",
+      "title": "Explicit parent-table assignment survives the upgrade",
+      "expected": "match",
+      "actual": "match",
+      "passed": true,
+      "seconds": 2.724535291985376
+    },
+    {
+      "id": "string-schema",
+      "title": "The text schema changes without printed output",
+      "expected": "changed",
+      "actual": "changed",
+      "passed": true,
+      "seconds": 2.7392643760249484
+    },
+    {
+      "id": "string-policy",
+      "title": "Accept an intentional string dtype migration",
+      "expected": "match",
+      "actual": "match",
+      "passed": true,
+      "seconds": 2.713169125985587
+    },
+    {
+      "id": "removed-alias",
+      "title": "A removed frequency alias stops execution",
+      "expected": "execution_failure",
+      "actual": "execution_failure",
+      "passed": true,
+      "seconds": 2.8421629590156954
+    },
+    {
+      "id": "stable-numeric",
+      "title": "An unchanged numerical result stays green",
+      "expected": "match",
+      "actual": "match",
+      "passed": true,
+      "seconds": 2.415360916987993
+    },
+    {
+      "id": "unstable",
+      "title": "A fresh random result cannot indict an upgrade",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "passed": true,
+      "seconds": 2.323271833010949
+    },
+    {
+      "id": "row-order",
+      "title": "Unordered keyed rows remain comparable",
+      "expected": "match",
+      "actual": "match",
+      "passed": true,
+      "seconds": 2.8025791669788305
+    },
+    {
+      "id": "duplicate-keys",
+      "title": "Ambiguous row identity never passes",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "passed": true,
+      "seconds": 2.861793208983727
+    },
+    {
+      "id": "baseline-error",
+      "title": "An already broken reference cannot certify an upgrade",
+      "expected": "inconclusive",
+      "actual": "inconclusive",
+      "passed": true,
+      "seconds": 2.9534051670052577
+    }
+  ],
+  "wall_seconds": 32.97763858301914,
+  "execution_count": 48,
+  "all_expected": true
+}

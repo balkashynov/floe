@@ -1,0 +1,56 @@
+name: Verify and publish demo
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: floe-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: '3.12'
+      - name: Create matched notebook environments
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r examples/reference-requirements.txt
+          python -m venv .runtimes/pandas3
+          .runtimes/pandas3/bin/python -m pip install -r examples/candidate-requirements.txt
+          .venv/bin/python -m pip install --no-deps .
+      - name: Verify typed comparison, evidence and real kernel behavior
+        run: .venv/bin/python -m pytest -q
+      - name: Execute all twelve upgrade and control cases
+        run: .venv/bin/python scripts/validate_matrix.py fresh-evidence
+      - name: Build the portable source and recorded demo
+        run: python scripts/package_release.py
+      - name: Upload demo
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-pages-artifact@v5.0.0
+        with:
+          path: site/dist
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: verify
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Publish the recorded demo
+        id: deployment
+        uses: actions/deploy-pages@v5.0.1

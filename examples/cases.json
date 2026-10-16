@@ -1,0 +1,62 @@
+[
+  {
+    "id": "category-loss",
+    "title": "An empty region vanishes",
+    "expected": "changed"
+  },
+  {
+    "id": "category-fixed",
+    "title": "Explicit group semantics preserve the report",
+    "expected": "match"
+  },
+  {
+    "id": "copy-on-write",
+    "title": "The price update no longer reaches its table",
+    "expected": "changed"
+  },
+  {
+    "id": "copy-fixed",
+    "title": "Explicit parent-table assignment survives the upgrade",
+    "expected": "match"
+  },
+  {
+    "id": "string-schema",
+    "title": "The text schema changes without printed output",
+    "expected": "changed"
+  },
+  {
+    "id": "string-policy",
+    "title": "Accept an intentional string dtype migration",
+    "expected": "match"
+  },
+  {
+    "id": "removed-alias",
+    "title": "A removed frequency alias stops execution",
+    "expected": "execution_failure"
+  },
+  {
+    "id": "stable-numeric",
+    "title": "An unchanged numerical result stays green",
+    "expected": "match"
+  },
+  {
+    "id": "unstable",
+    "title": "A fresh random result cannot indict an upgrade",
+    "expected": "inconclusive"
+  },
+  {
+    "id": "row-order",
+    "title": "Unordered keyed rows remain comparable",
+    "expected": "match"
+  },
+  {
+    "id": "duplicate-keys",
+    "title": "Ambiguous row identity never passes",
+    "expected": "inconclusive"
+  },
+  {
+    "id": "baseline-error",
+    "title": "An already broken reference cannot certify an upgrade",
+    "expected": "inconclusive"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "title": "The text schema changes without printed output",
+  "inputs": [],
+  "observations": [
+    {
+      "name": "labels",
+      "variable": "labels",
+      "cell": "calculate",
+      "policy": {}
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "floe-notebooks"
+version = "0.1.0"
+description = "Repeatable, typed evidence for notebook runtime upgrades"
+requires-python = ">=3.11"
+dependencies = ["nbclient>=0.10,<0.12", "nbformat>=5.10,<6", "ipykernel>=6,<8"]
+license = "MIT"
+
+[project.scripts]
+floe = "floe.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/floe"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100

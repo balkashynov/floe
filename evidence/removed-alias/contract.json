@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "title": "A removed frequency alias stops execution",
+  "inputs": [],
+  "observations": [
+    {
+      "name": "result",
+      "variable": "result",
+      "cell": "calculate",
+      "policy": {}
+    }
+  ]
+}

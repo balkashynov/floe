@@ -1,0 +1,29 @@
+{
+  "platform": "macOS-27.0.1-arm64-arm-64bit",
+  "python": "3.12.11",
+  "pandas": "2.3.3",
+  "method": "Three repeats of capture plus key-aligned self-comparison; tracemalloc enabled, input creation excluded. Python allocator peak, not RSS. This is a local cost characterization, not a speedup claim.",
+  "measurements": [
+    {
+      "rows": 1000,
+      "columns": 2,
+      "median_seconds": 0.03289604201563634,
+      "max_traced_bytes": 1118864,
+      "json_bytes": 83009
+    },
+    {
+      "rows": 10000,
+      "columns": 2,
+      "median_seconds": 0.3569521250028629,
+      "max_traced_bytes": 11380212,
+      "json_bytes": 848009
+    },
+    {
+      "rows": 50000,
+      "columns": 2,
+      "median_seconds": 1.9443378750002012,
+      "max_traced_bytes": 58439642,
+      "json_bytes": 4328009
+    }
+  ]
+}

@@ -1,0 +1,241 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>An empty region vanishes | Floe</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f2f5f3;color:#153a35;font:16px/1.6 system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:48px 24px}h1{font-size:clamp(32px,6vw,60px);line-height:1.1}article{padding:24px;margin:24px 0;background:white;border:1px solid #cadad3;border-radius:12px}.status{display:inline-block;border-radius:4px;padding:3px 10px;background:#dfe8e3;text-transform:uppercase;font:12px monospace}.changed{background:#ffe4c8;color:#8a4100}.match{background:#d7eee1}.inconclusive{background:#ede7fc}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px}table{border-collapse:collapse;width:100%;font-size:13px}td,th{text-align:left;border-bottom:1px solid #ddd;padding:10px;vertical-align:top}.scroll{overflow:auto}details{margin-top:20px}code{overflow-wrap:anywhere}a{color:inherit}footer{margin-top:40px}</style>
+<main><a href="report.json">Download full JSON evidence</a><p>FLOE / NOTEBOOK UPGRADE EVIDENCE</p><h1>An empty region vanishes</h1>
+<p>Verdict: <strong>changed</strong>. Observed values only. A match is not proof of notebook equivalence.</p>
+<p>Recorded kernel execution. This page does not execute a notebook. Values may contain your input data.</p>
+<article><div class='status changed'>changed</div><h2>revenue</h2><p>After cell <code>calculate</code>, observe <code>revenue</code>.</p><p>Stable observations violate the comparison policy</p><p>2 differences; showing at most 12.</p><div class='scroll'><table><thead><tr><th>Path</th><th>Change</th><th>Reference</th><th>Candidate</th></tr></thead><tbody><tr><td><code>/rows/length</code></td><td>length changed</td><td><pre>3</pre></td><td><pre>2</pre></td></tr><tr><td><code>/index/length</code></td><td>length changed</td><td><pre>3</pre></td><td><pre>2</pre></td></tr></tbody></table></div><details><summary>Policy and observations</summary><pre>{
+  &quot;name&quot;: &quot;revenue&quot;,
+  &quot;cell&quot;: &quot;calculate&quot;,
+  &quot;variable&quot;: &quot;revenue&quot;,
+  &quot;policy&quot;: {},
+  &quot;reference&quot;: {
+    &quot;kind&quot;: &quot;DataFrame&quot;,
+    &quot;columns&quot;: [
+      {
+        &quot;t&quot;: &quot;str&quot;,
+        &quot;v&quot;: &quot;region&quot;
+      },
+      {
+        &quot;t&quot;: &quot;str&quot;,
+        &quot;v&quot;: &quot;revenue&quot;
+      }
+    ],
+    &quot;dtypes&quot;: [
+      {
+        &quot;name&quot;: &quot;category&quot;,
+        &quot;categories&quot;: [
+          {
+            &quot;t&quot;: &quot;str&quot;,
+            &quot;v&quot;: &quot;east&quot;
+          },
+          {
+            &quot;t&quot;: &quot;str&quot;,
+            &quot;v&quot;: &quot;west&quot;
+          },
+          {
+            &quot;t&quot;: &quot;str&quot;,
+            &quot;v&quot;: &quot;north&quot;
+          }
+        ],
+        &quot;ordered&quot;: false
+      },
+      {
+        &quot;name&quot;: &quot;int64&quot;
+      }
+    ],
+    &quot;index_names&quot;: [
+      {
+        &quot;t&quot;: &quot;null&quot;
+      }
+    ],
+    &quot;index_dtypes&quot;: [
+      {
+        &quot;name&quot;: &quot;int64&quot;
+      }
+    ],
+    &quot;index&quot;: [
+      {
+        &quot;t&quot;: &quot;int&quot;,
+        &quot;v&quot;: &quot;0&quot;
+      },
+      {
+        &quot;t&quot;: &quot;int&quot;,
+        &quot;v&quot;: &quot;1&quot;
+      },
+      {
+        &quot;t&quot;: &quot;int&quot;,
+        &quot;v&quot;: &quot;2&quot;
+      }
+    ],
+    &quot;rows&quot;: [
+      [
+        {
+          &quot;t&quot;: &quot;str&quot;,
+          &quot;v&quot;: &quot;east&quot;
+        },
+        {
+          &quot;t&quot;: &quot;int&quot;,
+          &quot;v&quot;: &quot;160&quot;
+        }
+      ],
+      [
+        {
+          &quot;t&quot;: &quot;str&quot;,
+          &quot;v&quot;: &quot;west&quot;
+        },
+        {
+          &quot;t&quot;: &quot;int&quot;,
+          &quot;v&quot;: &quot;80&quot;
+        }
+      ],
+      [
+        {
+          &quot;t&quot;: &quot;str&quot;,
+          &quot;v&quot;: &quot;north&quot;
+        },
+        {
+          &quot;t&quot;: &quot;int&quot;,
+          &quot;v&quot;: &quot;0&quot;
+        }
+      ]
+    ]
+  },
+  &quot;candidate&quot;: {
+    &quot;kind&quot;: &quot;DataFrame&quot;,
+    &quot;columns&quot;: [
+      {
+        &quot;t&quot;: &quot;str&quot;,
+        &quot;v&quot;: &quot;region&quot;
+      },
+      {
+        &quot;t&quot;: &quot;str&quot;,
+        &quot;v&quot;: &quot;revenue&quot;
+      }
+    ],
+    &quot;dtypes&quot;: [
+      {
+        &quot;name&quot;: &quot;category&quot;,
+        &quot;categories&quot;: [
+          {
+            &quot;t&quot;: &quot;str&quot;,
+            &quot;v&quot;: &quot;east&quot;
+          },
+          {
+            &quot;t&quot;: &quot;str&quot;,
+            &quot;v&quot;: &quot;west&quot;
+          },
+          {
+            &quot;t&quot;: &quot;str&quot;,
+            &quot;v&quot;: &quot;north&quot;
+          }
+        ],
+        &quot;ordered&quot;: false
+      },
+      {
+        &quot;name&quot;: &quot;int64&quot;
+      }
+    ],
+    &quot;index_names&quot;: [
+      {
+        &quot;t&quot;: &quot;null&quot;
+      }
+    ],
+    &quot;index_dtypes&quot;: [
+      {
+        &quot;name&quot;: &quot;int64&quot;
+      }
+    ],
+    &quot;index&quot;: [
+      {
+        &quot;t&quot;: &quot;int&quot;,
+        &quot;v&quot;: &quot;0&quot;
+      },
+      {
+        &quot;t&quot;: &quot;int&quot;,
+        &quot;v&quot;: &quot;1&quot;
+      }
+    ],
+    &quot;rows&quot;: [
+      [
+        {
+          &quot;t&quot;: &quot;str&quot;,
+          &quot;v&quot;: &quot;east&quot;
+        },
+        {
+          &quot;t&quot;: &quot;int&quot;,
+          &quot;v&quot;: &quot;160&quot;
+        }
+      ],
+      [
+        {
+          &quot;t&quot;: &quot;str&quot;,
+          &quot;v&quot;: &quot;west&quot;
+        },
+        {
+          &quot;t&quot;: &quot;int&quot;,
+          &quot;v&quot;: &quot;80&quot;
+        }
+      ]
+    ]
+  },
+  &quot;status&quot;: &quot;changed&quot;,
+  &quot;reason&quot;: &quot;Stable observations violate the comparison policy&quot;,
+  &quot;equal&quot;: false,
+  &quot;invalid&quot;: null,
+  &quot;differences&quot;: [
+    {
+      &quot;path&quot;: &quot;/rows/length&quot;,
+      &quot;reason&quot;: &quot;length changed&quot;,
+      &quot;reference&quot;: 3,
+      &quot;candidate&quot;: 2
+    },
+    {
+      &quot;path&quot;: &quot;/index/length&quot;,
+      &quot;reason&quot;: &quot;length changed&quot;,
+      &quot;reference&quot;: 3,
+      &quot;candidate&quot;: 2
+    }
+  ],
+  &quot;difference_count&quot;: 2
+}</pre></details></article><details><summary>Provenance and execution failures</summary><pre>{
+  &quot;schema&quot;: 1,
+  &quot;title&quot;: &quot;An empty region vanishes&quot;,
+  &quot;manifest&quot;: {
+    &quot;notebook_sha256&quot;: &quot;2b259765628bf6756e04bda6645876df9bec911fea2a98a399da13b417c1c07e&quot;,
+    &quot;inputs&quot;: {
+      &quot;orders.csv&quot;: &quot;801bb388136945a95de704bd9c5306cc3a5926cffe201e9b9fd3ba1440d0c36d&quot;
+    },
+    &quot;contract_sha256&quot;: &quot;c65665402e305200261e681533913755123bf122e3d0e9efe19827c253ef076a&quot;
+  },
+  &quot;contract&quot;: {
+    &quot;schema&quot;: 1,
+    &quot;title&quot;: &quot;An empty region vanishes&quot;,
+    &quot;inputs&quot;: [
+      &quot;orders.csv&quot;
+    ],
+    &quot;observations&quot;: [
+      {
+        &quot;name&quot;: &quot;revenue&quot;,
+        &quot;variable&quot;: &quot;revenue&quot;,
+        &quot;cell&quot;: &quot;calculate&quot;,
+        &quot;policy&quot;: {}
+      }
+    ]
+  },
+  &quot;verdict&quot;: &quot;changed&quot;,
+  &quot;execution_errors&quot;: {
+    &quot;reference&quot;: [],
+    &quot;candidate&quot;: []
+  },
+  &quot;environment_errors&quot;: [],
+  &quot;scope&quot;: &quot;Observed values only. A match is not proof of notebook equivalence.&quot;,
+  &quot;environment_delta&quot;: [
+    {
+      &quot;package&quot;: &quot;pandas&quot;,
+      &quot;reference&quot;: &quot;2.3.3&quot;,
+      &quot;candidate&quot;: &quot;3.0.0&quot;
+    }
+  ]
+}</pre></details>
+<footer>Fresh kernels establish repeat evidence, not deterministic behavior for all future runs. A change needs human interpretation.</footer></main></html>

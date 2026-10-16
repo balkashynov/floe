@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "title": "Explicit parent-table assignment survives the upgrade",
+  "inputs": [],
+  "observations": [
+    {
+      "name": "prices",
+      "variable": "prices",
+      "cell": "calculate",
+      "policy": {
+        "keys": [
+          "id"
+        ]
+      }
+    }
+  ]
+}

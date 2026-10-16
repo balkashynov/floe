@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "title": "Unordered keyed rows remain comparable",
+  "inputs": [],
+  "observations": [
+    {
+      "name": "result",
+      "variable": "result",
+      "cell": "calculate",
+      "policy": {
+        "keys": [
+          "id"
+        ]
+      }
+    }
+  ]
+}

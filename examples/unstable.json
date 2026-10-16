@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "title": "A fresh random result cannot indict an upgrade",
+  "inputs": [],
+  "observations": [
+    {
+      "name": "result",
+      "variable": "result",
+      "cell": "calculate",
+      "policy": {}
+    }
+  ]
+}

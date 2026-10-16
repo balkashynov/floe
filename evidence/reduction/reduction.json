@@ -1,0 +1,100 @@
+{
+  "schema": 1,
+  "observation": "prices",
+  "original_code_cells": 5,
+  "remaining_code_cells": 2,
+  "cell_deletion_minimal": true,
+  "budget": 12,
+  "trials": [
+    {
+      "trial": 1,
+      "cell_ids": [
+        "description",
+        "prepare",
+        "unrelated",
+        "heading",
+        "calculate",
+        "after"
+      ],
+      "preserved": true,
+      "verdict": "changed"
+    },
+    {
+      "trial": 2,
+      "cell_ids": [
+        "description",
+        "unrelated",
+        "heading",
+        "calculate",
+        "after"
+      ],
+      "preserved": false,
+      "verdict": "inconclusive"
+    },
+    {
+      "trial": 3,
+      "cell_ids": [
+        "description",
+        "prepare",
+        "heading",
+        "calculate",
+        "after"
+      ],
+      "preserved": true,
+      "verdict": "changed"
+    },
+    {
+      "trial": 4,
+      "cell_ids": [
+        "description",
+        "heading",
+        "calculate",
+        "after"
+      ],
+      "preserved": false,
+      "verdict": "inconclusive"
+    },
+    {
+      "trial": 5,
+      "cell_ids": [
+        "description",
+        "prepare",
+        "calculate",
+        "after"
+      ],
+      "preserved": true,
+      "verdict": "changed"
+    },
+    {
+      "trial": 6,
+      "cell_ids": [
+        "description",
+        "calculate",
+        "after"
+      ],
+      "preserved": false,
+      "verdict": "inconclusive"
+    },
+    {
+      "trial": 7,
+      "cell_ids": [
+        "description",
+        "prepare",
+        "calculate"
+      ],
+      "preserved": true,
+      "verdict": "changed"
+    },
+    {
+      "trial": 8,
+      "cell_ids": [
+        "description",
+        "calculate"
+      ],
+      "preserved": false,
+      "verdict": "inconclusive"
+    }
+  ],
+  "claim": "One-cell-deletion minimal under this witness oracle",
+  "limits": "Preserves only the selected observations; other outputs and side effects may change."
+}

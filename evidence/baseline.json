@@ -1,0 +1,173 @@
+{
+  "method": "Exact original-cell output objects, excluding execution counts; first pair cross comparison plus repeat equality. Includes warnings. No nbval/pytest-notebook benchmark or normalization claim.",
+  "cases": [
+    {
+      "case": "category-loss",
+      "floe": "changed",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": false,
+      "displayed_outputs_repeat_stable": false,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "category-fixed",
+      "floe": "match",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "copy-on-write",
+      "floe": "changed",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "copy-fixed",
+      "floe": "match",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "string-schema",
+      "floe": "changed",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "string-policy",
+      "floe": "match",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "removed-alias",
+      "floe": "execution_failure",
+      "execution_only_pass": false,
+      "first_pair_displayed_outputs_equal": false,
+      "displayed_outputs_repeat_stable": false,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "stable-numeric",
+      "floe": "match",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "unstable",
+      "floe": "inconclusive",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "row-order",
+      "floe": "match",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "duplicate-keys",
+      "floe": "inconclusive",
+      "execution_only_pass": true,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    },
+    {
+      "case": "baseline-error",
+      "floe": "inconclusive",
+      "execution_only_pass": false,
+      "first_pair_displayed_outputs_equal": true,
+      "displayed_outputs_repeat_stable": true,
+      "environment_delta": [
+        {
+          "package": "pandas",
+          "reference": "2.3.3",
+          "candidate": "3.0.0"
+        }
+      ]
+    }
+  ]
+}

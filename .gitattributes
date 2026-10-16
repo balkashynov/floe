@@ -1,0 +1,2 @@
+# Preserve the exact bytes of declared inputs, whose hashes are evidence.
+*.csv -text

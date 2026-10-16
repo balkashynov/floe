@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "title": "An empty region vanishes",
+  "inputs": [
+    "orders.csv"
+  ],
+  "observations": [
+    {
+      "name": "revenue",
+      "variable": "revenue",
+      "cell": "calculate",
+      "policy": {}
+    }
+  ]
+}

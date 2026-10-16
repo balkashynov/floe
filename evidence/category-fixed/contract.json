@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "title": "Explicit group semantics preserve the report",
+  "inputs": [
+    "orders.csv"
+  ],
+  "observations": [
+    {
+      "name": "revenue",
+      "variable": "revenue",
+      "cell": "calculate",
+      "policy": {}
+    }
+  ]
+}

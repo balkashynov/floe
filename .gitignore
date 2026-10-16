@@ -1,0 +1,12 @@
+.venv/
+.runtimes/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+local-notes/
+build/
+/dist/
+/site/
+fresh-evidence/
+.DS_Store

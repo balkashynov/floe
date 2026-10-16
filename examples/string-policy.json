@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "title": "Accept an intentional string dtype migration",
+  "inputs": [],
+  "observations": [
+    {
+      "name": "labels",
+      "variable": "labels",
+      "cell": "calculate",
+      "policy": {
+        "check_dtype": false
+      }
+    }
+  ]
+}

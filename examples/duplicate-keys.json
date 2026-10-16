@@ -1,0 +1,17 @@
+{
+  "schema": 1,
+  "title": "Ambiguous row identity never passes",
+  "inputs": [],
+  "observations": [
+    {
+      "name": "result",
+      "variable": "result",
+      "cell": "calculate",
+      "policy": {
+        "keys": [
+          "id"
+        ]
+      }
+    }
+  ]
+}
